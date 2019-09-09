@@ -1,0 +1,75 @@
+<!-- 这是我学习html常见标签的文档 -->
+
+<!-- html 的知识点： 各种标签 -->
+
+<!-- 头标签 -->
+<!-- 头标签分类 -->
+<!-- 1 title: 标题 -->
+<!-- 2 meta: 页面相关信息 -->
+<!-- 3 link：定义文档外部资源关系 -->
+<!-- 4 base：页面上的所有链接规标题栏显示的内容定默认地址或默认目标 -->
+
+
+<head>
+    <title> 这是标题 </title>
+    <!-- 3秒后跳转 -->
+    <!-- <meta http-equiv="refresh" content="3; url=http://www.baidu.com"> -->
+    <!-- 字符集 -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="Keywords" content="网易,邮箱,游戏,新闻,体育,娱乐,女性,亚运,论坛,短信" />
+    <meta name="Description" content="网易是中国领先的互联网技术公司，为用户提供免费邮箱、游戏、搜索引擎服务，开设新闻、娱乐、体育等30多个内容频道，及博客、视频、论坛等互动交流，网聚人的力量。" />
+</head>
+
+<!-- body 属性 -->
+<!-- bgcolor：设置整个网页的背景颜色。
+background：设置整个网页的背景图片。
+text：设置网页中的文本颜色。
+leftmargin：网页的左边距。IE浏览器默认是8个像素。
+topmargin：网页的上边距。
+rightmargin：网页的右边距。
+bottommargin：网页的下边距。 -->
+
+<style>
+        /* *{
+            font-size: 1cm
+        } */
+        p{
+            font-size:50px; 		/*字体大小*/
+            line-height: 30px;      /*行高*/
+            font-family:幼圆,黑体; 	 /*字体类型：如果没有幼圆就显示黑体，没有黑体就显示默认*/
+            font-style:italic ;		/*italic表示斜体，normal表示不倾斜*/
+            font-weight:bold;	    /*粗体：属性值写成bolder也可以*/
+            font-variant:small-caps;  /*小写变大写*/
+        }
+        label{
+            font-size: 2cm
+        }
+</style>
+
+<body bgcolor="gray" text="red" leftmargin="10">
+
+    <!-- 两类标签： 1 文本级 2 容器级 -->
+    <!-- 1 文本级：只能放文字、图片、表单元素 p、span、a、b、i、u、em -->
+    <!-- 2 容器级：可以放任何东西 div、h系列、li、dt、dd -->
+
+    <!-- 段落 -->
+    <h1> 我是一级标题 </h1>
+    <h2>我是二级标题</h2>
+    <p align="center" font="12">This is a paragraph</p>
+    <p>This is another paragraph</p>
+
+    <!-- div: division 分割标签 -->
+    <div align="center"> 我是一个例子 </div>
+    <a name="miao001"> 描点 </a>
+    <hr></hr>
+    <div align="center"> 我是一个例子 </div>
+
+    <div>
+
+        <div> 哈哈哈哈 <label>哈哈</label>哈哈哈哈哈哈 </div>
+        <a href="http://www.baidu.com" target="_blank">点我点我</a>
+
+        <a href="#miao001">锚点</a>
+    </div>
+
+</body>
