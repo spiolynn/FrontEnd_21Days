@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            height: 100px;
+            background-color: pink;
+            margin: 10px;
+            display: none;
+        }
+    </style>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script src="002.js"></script>
+    <script>
+
+        // 入口函数简洁写法
+        $(function(){
+            // alert("1")
+            console.log("call default.js")
+            var jQbtn = $("button");
+            var jqBox1 = $("#box");  // id获取 单个元素
+            var jqBox2 = $(".box");  // 通过 class 获取的是数组
+            var jqBox3 = $("div");   // 通过标签获取的是数组
+            var jQdiv = $("div"); 
+
+            jQbtn.click(function () {
+                jQdiv.show(2000).html("haha");//显示盒子。
+                // jQdiv.html("tomorrow！").SHOW(100);//设置内容
+                //上面的两行可以写成链式编程：jQdiv.show(3000).html(1111);
+            });//事件是通过方法绑定的。
+
+
+
+            console.log(jqBox1)
+            console.log(jqBox2)
+            console.log(jqBox3)
+
+            jqBox1.css("width",100)
+            jqBox1.css("height", 100);
+            jqBox1.css("margin", 10);
+            jqBox1.css("background", "green");
+        });
+        
+    </script>
+
+</head>
+
+
+<body>
+<button>显示五个div盒子和设置内容</button>
+
+<!-- <div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div> -->
+
+<div></div>
+<div class="box"></div>
+<div id="box"></div>
+<div class="box"></div>
+<div></div>
+
+<!-- 子代 -->
+
+<ul>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+    <ol>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+    </ol>
+</ul>
+
+</body>
+</html>
